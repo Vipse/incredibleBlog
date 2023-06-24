@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.ant-col:first-child {
+  padding-left: 0 !important;
+}
+
+.ant-col:last-child {
+  padding-right: 0 !important;
+}
+
+.ant-card .ant-card-body::before {
+  display: none;
+}
+
+.ant-card .ant-card-body::after {
+  display: none;
+}
