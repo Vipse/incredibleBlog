@@ -28,7 +28,7 @@ function Posts(props: {
   const pageChangeHandler = async (page: number) => {
     if (searchResults) {
       const res = await fetch(
-        `${process.env.HOST_URL}/api/posts?page=${page}&search=${searchValue}`
+        `${process.env.NEXT_PUBLIC_HOST_URL}/api/posts?page=${page}&search=${searchValue}`
       );
       const data = await res.json();
 
@@ -49,7 +49,7 @@ function Posts(props: {
       setSearchTotalPages(0);
     } else {
       const res = await fetch(
-        `${process.env.HOST_URL}/api/posts?page=1&search=${value}`
+        `${process.env.NEXT_PUBLIC_HOST_URL}/api/posts?page=1&search=${value}`
       );
       const data = await res.json();
 
