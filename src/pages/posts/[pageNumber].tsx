@@ -154,6 +154,7 @@ export async function getStaticProps({
 
     return {
       props: data,
+      revalidate: 300,
     };
   } catch (error) {
     console.log(error);
